@@ -1,3 +1,22 @@
-[gd_scene format=3 uid="uid://utjl614aytfg"]
+[gd_scene load_steps=2 format=3 uid="uid://utjl614aytfg"]
+
+[ext_resource type="Texture2D" uid="uid://c62rji3sbnlhv" path="res://assets/sprites/fondo.jpg" id="1_ylum6"]
 
 [node name="inicio" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(120.75, 78.5)
+scale = Vector2(1.9233334, 1.59)
+texture = ExtResource("1_ylum6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(121, 79)
+zoom = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 148.0
+offset_top = 50.0
+offset_right = 260.0
+offset_bottom = 99.0
+text = "Me caí, y perdí
+la conciencia"
