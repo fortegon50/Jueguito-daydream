@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuk5ab5ygqv8n"]
+
+[ext_resource type="Texture2D" uid="uid://cxpc7rigs2suv" path="res://assets/fondo.jpg" id="1_n2776"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-22.749998, -37.5)
+scale = Vector2(1.9033333, 1.6100001)
+texture = ExtResource("1_n2776")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -46.89142
+offset_top = -40.683228
+offset_right = 70.10858
+offset_bottom = 41.316772
+theme_override_font_sizes/font_size = 10
+text = "Decidiste salvar
+a los demas
+acosta de tu 
+propia identidad, wow...
+Final 2"
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(4, 4)

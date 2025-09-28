@@ -1,16 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2hquhj5pvvuk"]
+[gd_scene load_steps=2 format=3 uid="uid://b2hquhj5pvvuk"]
 
 [ext_resource type="Texture2D" uid="uid://8okofqj47uyp" path="res://assets/sprites/pixil-frame-0 (3).png" id="1_36eg4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7vnm"]
-size = Vector2(583.44586, 535.5796)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.013078185, 0.0076181516)
+position = Vector2(7.757814, -13.234375)
+scale = Vector2(0.08142896, 0.07346082)
 texture = ExtResource("1_36eg4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
-position = Vector2(90.59312, -5.258893)
-shape = SubResource("RectangleShape2D_f7vnm")
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 285.429
+offset_top = -214.6127
+offset_right = 1439.8096
+offset_bottom = 633.5477
+theme_override_font_sizes/font_size = 46
+text = "Colega, en mis 20 años aqui nunca te vi, 
+me recuerdas a mi hijo que busco aqui mismo
+"

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4nof1plb52js"]
+
+[ext_resource type="Texture2D" uid="uid://5dv7sopykfbh" path="res://assets/sprites/pixil-frame-0 (4).png" id="1_pa7nu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pa7nu"]
+size = Vector2(5, 1.9999989)
+
+[node name="proyectiles" type="Node2D"]
+
+[node name="bullet" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="bullet"]
+position = Vector2(1.9073486e-06, -4.7683716e-07)
+scale = Vector2(0.16666667, 0.11904762)
+texture = ExtResource("1_pa7nu")
+region_enabled = true
+region_rect = Rect2(32.54773, 14.55443, 30.9357, 21.94277)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bullet/Sprite2D"]
+position = Vector2(-1.144409e-05, 1.07526785e-05)
+scale = Vector2(5.999999, 8.399998)
+shape = SubResource("RectangleShape2D_pa7nu")

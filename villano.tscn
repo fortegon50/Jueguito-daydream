@@ -1,3 +1,56 @@
-[gd_scene format=3 uid="uid://bfcp12ct0ejhx"]
+[gd_scene load_steps=5 format=3 uid="uid://bfcp12ct0ejhx"]
+
+[ext_resource type="Texture2D" uid="uid://b63r1k11pgl3k" path="res://assets/sprites/waaaaaa-removebg-preview.png" id="1_pu0vj"]
+[ext_resource type="Script" uid="uid://dlb7id0xj4ifu" path="res://button.gd" id="2_04n2k"]
+[ext_resource type="Script" uid="uid://bwh1v0lu1q5i1" path="res://sprite_2d.gd" id="2_76oaw"]
+[ext_resource type="Script" uid="uid://7627l5b4jko4" path="res://button_2.gd" id="3_ekq3y"]
 
 [node name="villano" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-36, -31.999996)
+scale = Vector2(0.14341085, 0.12137681)
+texture = ExtResource("1_pu0vj")
+script = ExtResource("2_76oaw")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 251.02704
+offset_top = -313.07465
+offset_right = 804.02704
+offset_bottom = -151.07465
+theme_override_font_sizes/font_size = 26
+text = "Llegaste a la cima, pero para
+recuperar tu humanidad y recuerdos debes
+dejar morir a la gente de la cueva, o puedes 
+irte y salvar a la gente, pero no seras nadie."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 1.0430001
+anchor_top = 0.42200002
+anchor_right = 1.0430001
+anchor_bottom = 0.42200002
+offset_left = -301.10693
+offset_top = -294.45288
+offset_right = 312.51465
+offset_bottom = 109.24858
+theme_override_constants/separation = 3
+
+[node name="Button2" type="Button" parent="Sprite2D/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Salvar
+"
+script = ExtResource("3_ekq3y")
+
+[node name="Button" type="Button" parent="Sprite2D/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Recuperar
+"
+script = ExtResource("2_04n2k")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D/VBoxContainer/Button"]
+
+[connection signal="pressed" from="Sprite2D/VBoxContainer/Button2" to="Sprite2D" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Sprite2D/VBoxContainer/Button" to="Sprite2D" method="_on_button_pressed"]

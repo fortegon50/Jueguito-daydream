@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://05rgnsg4dw0f"]
+
+[ext_resource type="Texture2D" uid="uid://cxpc7rigs2suv" path="res://assets/fondo.jpg" id="1_1ykyh"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.5, 0)
+scale = Vector2(1.9133333, 1.62)
+texture = ExtResource("1_1ykyh")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -52.52613
+offset_top = -42.592594
+offset_right = 127.47387
+offset_bottom = 58.407406
+theme_override_font_sizes/font_size = 10
+text = "Decidiste recuperar
+tu vida acosta de otras,
+tal vez tu humanidad
+no regresó...
+Final 1"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)

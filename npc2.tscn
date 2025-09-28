@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://bxpoorp2mrhmp"]
+[gd_scene load_steps=2 format=3 uid="uid://bxpoorp2mrhmp"]
+
+[ext_resource type="Texture2D" uid="uid://c6gh3vf71boe1" path="res://assets/sprites/niño-removebg-preview.png" id="1_a8tcw"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6.5937486, -12.624996)
+scale = Vector2(0.068482354, 0.042595554)
+texture = ExtResource("1_a8tcw")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = 224.96675
+offset_top = -243.5701
+offset_right = 552.96674
+offset_bottom = -102.5701
+theme_override_font_sizes/font_size = 50
+text = "Bro, me perdí
+xd"
