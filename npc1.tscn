@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://b2hquhj5pvvuk"]
+[gd_scene load_steps=3 format=3 uid="uid://b2hquhj5pvvuk"]
 
-[ext_resource type="Texture2D" uid="uid://c6kwrv3sbaxu0" path="res://assets/sprites/Imagen de WhatsApp 2025-09-27 a las 16.41.13_86b86969.jpg" id="1_36eg4"]
+[ext_resource type="Texture2D" uid="uid://8okofqj47uyp" path="res://assets/sprites/pixil-frame-0 (3).png" id="1_36eg4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7vnm"]
+size = Vector2(583.44586, 535.5796)
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-19.25, -51)
-scale = Vector2(0.8303965, 0.74626863)
+scale = Vector2(0.013078185, 0.0076181516)
 texture = ExtResource("1_36eg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(90.59312, -5.258893)
+shape = SubResource("RectangleShape2D_f7vnm")

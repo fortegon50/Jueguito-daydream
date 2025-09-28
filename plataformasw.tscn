@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://7cpynbhlql2p"]
+[gd_scene load_steps=2 format=3 uid="uid://7cpynbhlql2p"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_a8yjf"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_a8yjf")
+
+[node name="TileMap" type="TileMap" parent="StaticBody2D"]
+format = 2
